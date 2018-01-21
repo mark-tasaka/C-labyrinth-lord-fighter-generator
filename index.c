@@ -899,36 +899,36 @@ int main(void)
 		{
 			fprintf_s(ptrFile, "\n**********LABRYNTH LORD: Character Record Sheet***********\n", ARRAY_SIZE);
 
-			printf_s("\nName: %-15s              Class: Fighter\n", fighterName, ARRAY_SIZE);
-			printf_s("Alignment: %-15s         Level: 1\n", alignment, ARRAY_SIZE);
+			fprintf_s(ptrFile, "\nName: %-15s              Class: Fighter\n", fighterName, ARRAY_SIZE);
+			fprintf_s(ptrFile, "Alignment: %-15s         Level: 1\n", alignment, ARRAY_SIZE);
 
-			printf_s("Armour Class: %d (%d)            Hit Points: %u\n", acModified, armourClassBase, hitPoints, ARRAY_SIZE);
+			fprintf_s(ptrFile, "Armour Class: %d (%d)                Hit Points: %u\n", acModified, armourClassBase, hitPoints, ARRAY_SIZE);
 
-			printf_s("\nABILITY SCORES", ARRAY_SIZE);
+			fprintf_s(ptrFile, "\nABILITY SCORES", ARRAY_SIZE);
 
-			printf_s("\nSTR: %-3u  (%s%d)\n", strength, strSign, strModifier, ARRAY_SIZE);
-			printf_s("DEX: %-3u  (%s%d)\n", dexterity, dexSign, dexModifier, ARRAY_SIZE);
-			printf_s("CON: %-3u  (%s%d)\n", constitution, conSign, conModifier, ARRAY_SIZE);
-			printf_s("INT: %-3u  (%s%d)\n", intelligence, intSign, intModifier, ARRAY_SIZE);
-			printf_s("WIS: %-3u  (%s%d)\n", wisdom, wisSign, wisModifier, ARRAY_SIZE);
-			printf_s("CHA: %-3u  (%s%d)\n", charisma, charSign, charModifier, ARRAY_SIZE);
-
-
-			printf_s("\nSAVING THROWS\n", ARRAY_SIZE);
-			printf_s("%u vs Breath Attacks\n", breathAttacks, ARRAY_SIZE);
-			printf_s("%u vs Posion or Death\n", poisonDeath, ARRAY_SIZE);
-			printf_s("%u vs Petrify or Paralyze\n", petrifyParalyze, ARRAY_SIZE);
-			printf_s("%u vs Breath Attacks\n", wands, ARRAY_SIZE);
-			printf_s("%u vs Posion or Death\n", spells, ARRAY_SIZE);
+			fprintf_s(ptrFile, "\nSTR: %-3u  (%s%d)\n", strength, strSign, strModifier, ARRAY_SIZE);
+			fprintf_s(ptrFile, "DEX: %-3u  (%s%d)\n", dexterity, dexSign, dexModifier, ARRAY_SIZE);
+			fprintf_s(ptrFile, "CON: %-3u  (%s%d)\n", constitution, conSign, conModifier, ARRAY_SIZE);
+			fprintf_s(ptrFile, "INT: %-3u  (%s%d)\n", intelligence, intSign, intModifier, ARRAY_SIZE);
+			fprintf_s(ptrFile, "WIS: %-3u  (%s%d)\n", wisdom, wisSign, wisModifier, ARRAY_SIZE);
+			fprintf_s(ptrFile, "CHA: %-3u  (%s%d)\n", charisma, charSign, charModifier, ARRAY_SIZE);
 
 
-			printf_s("\nTHACO (melee): %u                THACO (range): %u", meleeTHACO, rangeTHACO, ARRAY_SIZE);
-			printf_s("\nWEALTH: %u gold\n", gold, ARRAY_SIZE);
-			printf_s("WEAPONS: %s\n", weapons, ARRAY_SIZE);
-			printf_s("ARMOUR: %s\n", armour, ARRAY_SIZE);
-			printf_s("GEAR: %s\n", gear, ARRAY_SIZE);
+			fprintf_s(ptrFile, "\nSAVING THROWS\n", ARRAY_SIZE);
+			fprintf_s(ptrFile, "%u vs Breath Attacks\n", breathAttacks, ARRAY_SIZE);
+			fprintf_s(ptrFile, "%u vs Posion or Death\n", poisonDeath, ARRAY_SIZE);
+			fprintf_s(ptrFile, "%u vs Petrify or Paralyze\n", petrifyParalyze, ARRAY_SIZE);
+			fprintf_s(ptrFile, "%u vs Breath Attacks\n", wands, ARRAY_SIZE);
+			fprintf_s(ptrFile, "%u vs Posion or Death\n", spells, ARRAY_SIZE);
 
-			printf_s("\nNotes: %s%s", primeRequisiteBonus, charismaReaction, ARRAY_SIZE);
+
+			fprintf_s(ptrFile, "\nTHACO (melee): %u                THACO (range): %u", meleeTHACO, rangeTHACO, ARRAY_SIZE);
+			fprintf_s(ptrFile, "\nWEALTH: %u gold\n", gold, ARRAY_SIZE);
+			fprintf_s(ptrFile, "WEAPONS: %s\n", weapons, ARRAY_SIZE);
+			fprintf_s(ptrFile, "ARMOUR: %s\n", armour, ARRAY_SIZE);
+			fprintf_s(ptrFile, "GEAR: %s\n", gear, ARRAY_SIZE);
+
+			fprintf_s(ptrFile, "\nNotes: %s%s", primeRequisiteBonus, charismaReaction, ARRAY_SIZE);
 
 		}
 
